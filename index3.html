@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de hospital</title>
+    <style>
+        *{
+            background-color: rgba(198, 219, 212, 0);
+        }
+        body{
+            display:grid;
+            grid-template-rows: auto;
+            margin-left:300px ;
+            margin-right:300px ;
+            margin-top: 20px;
+        }
+        div{
+            margin: 1px;
+            min-height: 100px;
+            min-width: 100px;
+            border:1px solid rgba(0, 0, 0, 0);
+            background-color: rgb(125, 178, 247);
+        }
+        .name{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .data-faixaetaria{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        .genero{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        label{
+            font-size:20px;
+        }
+        input{
+            height: 20px;;
+            width:70%;
+        }
+        form>*{
+            display:inline-block;
+           text-align: center;
+        }
+        form{
+            margin-left: 200px;
+        }
+        h1{
+            color:white;
+            display: inline;
+            margin-left: 200px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+        img{
+            display: inline;
+            margin-bottom: -10px;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div> <h1>FICHA HOSPITALAR</h1> <img src="placa-de-hospital.png" width="50px"></div>
+    <div class="name"><div><label for="txt">Nome:</label>
+        <input type="text" name="" id="txt" value=""></div>
+        <div><label for="txtSobrenome">Sobrenome:</label>
+            <input type="text" name="" id="txtSobrenome" value=""></div>
+    </div>
+    <div class="genero"><div><p>Insira seu gênero:</p></div><div> <input type="radio" id="homem" name="fav_language" value="homem">
+        <label for="homem">HOMEM</label>
+        
+        </div><div><input type="radio" id="mulher" name="fav_language" value="mulher"><label for="mulher">MULHER</label></div></div>
+        <div class="data-faixaetaria"><div><label for="data">Data de nascimento:</label>
+            <input type="date" name="" id="data" value=""></div>
+            <div><label for="txtSobrenome">Faixa etária:</label><br>
+        <input type="radio" id="criança" name="fav_language" value="criança">
+        <label for="criança">criança</label>
+        <input type="radio" id="adulto" name="fav_language" value="adulto">
+        <label for="adulto">adulto</label>
+        <input type="radio" id="idoso" name="fav_language" value="idoso">
+        <label for="idoso">idoso</label></div>
+        </div>
+        <div class="name">
+        <div class="cidade"><label for="cidade">Cidade:</label>
+            <input type="text" name="" id="cidade" value=""></div>
+            <div><label for="Estado">Estado:</label>
+                <input type="text" name="" id="Estado" value=""></div>
+        </div>
+    <div><div><label for="telefone">Telefone:</label>
+        <input type="number" name="" id="Telefone" value=""></div>
+</div></div>
+    <div><p>Possui alguma dessas doenças?</p>
+        <input type="checkbox" id="diabetes" name="vehicle1" value="diabetes">
+        <label for="diabetes"> diabetes</label><br>
+        <input type="checkbox" id="pressãoalta" name="vehicle2" value="pressãoalta">
+        <label for="pressãoalta"> pressão alta</label><br>
+        <input type="checkbox" id="ansiedade" name="ansiedade" value="ansiedade">
+        <label for="ansiedade"> ansiedade</label></div>
+        <div class="name"><div><label for="email">Email:</label>
+            <input type="email" name="" id="email" value=""></div>
+            <div><label for="senha">Senha:</label>
+                <input type="password" name="" id="semha" value=""></div>
+        </div>
+</body>
+</html>
