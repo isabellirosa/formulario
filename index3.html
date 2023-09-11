@@ -12,7 +12,7 @@
             display:grid;
             grid-template-rows: auto;
             margin-left:300px ;
-            margin-right:300px ;
+            margin-right:800px ;
             margin-top: 20px;
         }
         div{
@@ -21,6 +21,7 @@
             min-width: 100px;
             border:1px solid rgba(0, 0, 0, 0);
             background-color: rgb(125, 178, 247);
+            align-items: center;
         }
         .name{
             display: grid;
@@ -28,18 +29,14 @@
         }
         .data-faixaetaria{
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 1fr;
         }
-        .genero{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+        
         label{
             font-size:20px;
         }
         input{
             height: 20px;;
-            width:70%;
         }
         form>*{
             display:inline-block;
@@ -60,8 +57,10 @@
             margin-bottom: -10px;
         }
         p{
+            display: inline;
             font-size: 20px;
         }
+       
     </style>
 </head>
 <body>
@@ -71,19 +70,20 @@
         <div><label for="txtSobrenome">Sobrenome:</label>
             <input type="text" name="" id="txtSobrenome" value=""></div>
     </div>
-    <div class="genero"><div><p>Insira seu gênero:</p></div><div> <input type="radio" id="homem" name="fav_language" value="homem">
+    <div class="genero"><p>Insira seu gênero:</p> <br><br>
+    <input type="radio" id="homem" name="fav_language" value="homem">
         <label for="homem">HOMEM</label>
         
-        </div><div><input type="radio" id="mulher" name="fav_language" value="mulher"><label for="mulher">MULHER</label></div></div>
+        <input type="radio" id="mulher" name="fav_language" value="mulher"><label for="mulher">MULHER</label></div>
         <div class="data-faixaetaria"><div><label for="data">Data de nascimento:</label>
             <input type="date" name="" id="data" value=""></div>
             <div><label for="txtSobrenome">Faixa etária:</label><br>
         <input type="radio" id="criança" name="fav_language" value="criança">
-        <label for="criança">criança</label>
+        <label for="criança"><p>criança</p></label><br>
         <input type="radio" id="adulto" name="fav_language" value="adulto">
-        <label for="adulto">adulto</label>
+        <label for="adulto"><p>adulto</p></label><br>
         <input type="radio" id="idoso" name="fav_language" value="idoso">
-        <label for="idoso">idoso</label></div>
+        <label for="idoso"><p>idoso</p></label></div>
         </div>
         <div class="name">
         <div class="cidade"><label for="cidade">Cidade:</label>
@@ -94,7 +94,7 @@
     <div><div><label for="telefone">Telefone:</label>
         <input type="number" name="" id="Telefone" value=""></div>
 </div></div>
-    <div><p>Possui alguma dessas doenças?</p>
+    <div><p>Possui alguma dessas doenças?</p><br>
         <input type="checkbox" id="diabetes" name="vehicle1" value="diabetes">
         <label for="diabetes"> diabetes</label><br>
         <input type="checkbox" id="pressãoalta" name="vehicle2" value="pressãoalta">
